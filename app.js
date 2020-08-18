@@ -15,7 +15,7 @@ let express = require("express"),
     authRoutes = require("./routes/index")
 
 let port = process.env.PORT || 3000;
-mongoose.connect("mongodb+srv://saswat:password12#@cluster0.p2r5j.mongodb.net/yelp_camp?retryWrites=true&w=majority", { useFindAndModify: false, useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect("mongodb+srv://saswat:ebHERFX2aXqHoUqF@cluster0.p2r5j.mongodb.net/yelp_camp?retryWrites=true&w=majority", { useFindAndModify: false, useNewUrlParser: true, useUnifiedTopology: true})
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"))
